@@ -1,0 +1,12 @@
+site_name: "Combinator.ml"
+theme:
+  name: material
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+repo_url: https://github.com/combinator-ml/website
