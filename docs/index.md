@@ -104,4 +104,4 @@ Stacks are typically developed from components in the following categories.
 
 Find us in `#mlops-stacks` on the MLOps.community Slack
 
-[Join Slack](https://go.mlops.community/slack){ .md-button .md-button--primary }
+[Join Slack :rocket:](https://go.mlops.community/slack){ .md-button .md-button--primary }
