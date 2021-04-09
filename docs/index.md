@@ -98,7 +98,7 @@ Stacks are typically developed from components in the following categories.
 * [Luke Marsden](https://www.linkedin.com/in/luke-marsden-71b3789/) - MLOps Consulting
 * [Phil Winder](https://www.linkedin.com/in/drphilwinder/) - Winder Research
 * [Demetrios Brinkmann](https://www.linkedin.com/in/dpbrinkm/) - MLOps Community
-* [Kai Davenport](https://www.linkedin.com/in/kai-davenport-228b6017/) - Kaidam Ltd
+* [Kai Davenport](https://www.linkedin.com/in/kai-davenport-228b6017/) - MLOps Consulting
 
 ## Get involved!
 
