@@ -82,7 +82,7 @@ Stacks are typically developed from components in the following categories.
 
     Use Pachyderm to train a model, and Seldon to deploy it, with full data version control & provenance.
 
-    [**View**](stacks/pachyderm-seldon.md)
+    [**View**](stacks/pachyderm-seldon.md){ .md-button }
 
 !!! abstract inline "SAME + Kubeflow + MLflow"
     *By Microsoft*
