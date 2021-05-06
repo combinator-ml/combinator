@@ -10,3 +10,15 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
 repo_url: https://github.com/combinator-ml/website
+nav:
+  - Components:
+    - components/introduction.md
+    - Data:
+      - components/data/mino.md
+      - components/data/pachyderm.md
+  - Stacks:
+    - stacks/introduction.md
+    - stacks/kubeflow-mlflow.md
+    - stacks/minio-pachyderm.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
