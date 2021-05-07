@@ -17,9 +17,15 @@ The following is a set of guidelines for contributing. These are mostly guidelin
 
 Bugs are tracked as GitHub issues, tagged with a `bug` label. Search before you create an issue. When you create an issue, please provide the following information by filling in the template.
 
+- Core documentation or website issues should be [reported to the combinator repository](https://github.com/combinator-ml/combinator/issues)
+- Component or stack issues should be reported to the respective repository, because these may not be owned by the core contributors
+
 ## Suggesting Feature Requests or Enhancements
 
 Enhancements or feature requests are tracked as GitHub issues, tagged with an `enhancement` label. When you create an issue, please provide the following information by filling in the template.
+
+- Enhancements to combinator in general (e.g. new stacks, new components, new ideas) should be [reported to the combinator repository](https://github.com/combinator-ml/combinator/issues)
+- Enhancements to components or stacks should be reported to the respective repository, because these may not be owned by the core contributors
 
 ## Pull Requests
 
