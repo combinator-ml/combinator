@@ -18,6 +18,7 @@ nav:
       - components/data/pachyderm.md
   - Stacks:
     - stacks/introduction.md
+    - stacks/bodywork-mlflow.md
     - stacks/kubeflow-mlflow.md
     - stacks/minio-pachyderm.md
   - CONTRIBUTING.md
