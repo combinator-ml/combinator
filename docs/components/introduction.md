@@ -14,8 +14,9 @@ Undoubtedly there are components that cross boundaries. When this happens, they 
 
 ## Data
 
-- [Minio](data/mino.md) - S3 API compatible cloud-native storage
+- [Minio](data/minio.md) - S3 API compatible cloud-native storage
 - [Pachyderm](data/pachyderm.md) - Data lineage (version control)
+- [Feast](data/feast.md) - Feature store
 
 ## Develop
 
