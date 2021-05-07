@@ -3,8 +3,9 @@ name: Feature request
 about: Suggest an idea for this project
 title: 'feat: [short description]'
 labels: enhancement
-assignees: philwinder
-
+assignees:
+- philwinder
+- lukemarsden
 ---
 
 **Is your feature request related to a problem? Please describe.**
