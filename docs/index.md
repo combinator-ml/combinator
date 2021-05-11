@@ -1,6 +1,12 @@
 # Easy MLOps Stacks
 
-Sophisticated teams develop their MLOps stack from a combination of best of breed components. This open source community exists to make combining them less of a headache.
+Sophisticated teams develop their MLOps stack from a combination of best of breed components. 
+
+But building or spinning up stacks is incredibly difficult. 
+
+This open source community exists to make combining them less of a headache. 
+
+Deploy common MLOps stacks with a single command.
 
 <figure>
   <img src="images/stacks.webp" width="600" />
@@ -11,13 +17,15 @@ Sophisticated teams develop their MLOps stack from a combination of best of bree
 
 Combinator.ml makes it easy to test drive, combine & deploy the stack that's best for you.
 
+### Components, Stacks and Infrastructure
+
+Combinator components are infinitely composible ML products. We present a curated combination of components as stacks, although it is easy to develop your own bespoke stack. Infrastructure abstractions make it easy to deploy components and stacks. [Find out more.](design.md)
+
 ### ![Terraform](images/terraform.webp){ width=200 }
 
-Terraform is the common language we use to combine stacks.
+Terraform is the common language we use to combine stacks. Don't worry if you're not familiar with it, we make it easy to get started with it.
 
-Don't worry if you're not familiar with it, we make it easy to get started with it.
-
-You can deploy a test drive, local dev environment or into the clouds of your choice.
+You can test drive (with the help of [TestFaster](https://testfaster.ci)), spin up a local dev environment, or deploy to a cloud of your choice.
 
 ### ![GitHub](images/github.webp){ width=200 }
 
@@ -25,24 +33,25 @@ Every component is published as a terraform module in an open source GitHub repo
 
 Each stack is a terraform module too, which references the terraform modules of the components.
 
-We need your help to maintain these! Fork them and contribute PRs please!
-
-If you want to add a new one under our GitHub org, join us on `#mlops-stacks` on the [MLOps.community Slack](https://go.mlops.community/slack).
-
+We need your help to maintain these! Please contribute to the existing components or stacks, or create your own. [Find out more.](CONTRIBUTING.md)
 
 ## MLOps Categories
 
-Stacks are typically developed from components in the following categories.
+Components typically fall into one ore more of the following MLOps catagories. [Find out more.](components/introduction.md)
 
 | Category       | Description | |
 | ----------     | ----------- | |
-| **Data**       | Data forms the backbone of any MLOps effort. | [**Explore**](categories/data.md) |
-| **Training**   | Create models in exploratory or production-grade modes. | [**Explore**](categories/training.md) |
-| **Deployment** | Deploy your models to integrate them & get business value. | [**Explore**](categories/deployment.md) |
-| **Monitoring** | Understand the behavior of your models in production. | [**Explore**](categories/monitoring.md) |
-
+| **Data**       | Store, manage, and move data. | [**Explore**](components/introduction.md#data) |
+| **Develop**   | Develop and train models | [**Explore**](components/introduction.md#develop) |
+| **Deploy** | Deploy models to extract value. | [**Explore**](components/introduction.md#deploy) |
+| **Monitor** | Understand the behavior of your models | [**Explore**](components/introduction.md#monitor) |
+| **Govern** | Manage, control, and audit your models. | [**Explore**](components/introduction.md#govern) |
 
 ## Featured Stacks
+
+Stacks are oppinionated combinations of components. [Find out more.](stacks/introduction.md)
+
+Here are a few examples:
 
 !!! abstract inline "Kubeflow + MLflow"
     *By combinator.ml*
@@ -51,57 +60,33 @@ Stacks are typically developed from components in the following categories.
 
     [**View**](stacks/kubeflow-mlflow.md){ .md-button }
 
-
-!!! abstract inline "ClearML + KFServing"
+!!! abstract inline "Minio + Pachyderm"
     *By combinator.ml*
 
-    ClearML provides experiment tracking, training orchestration and data tracking. This integration plugs it into KFServing for model deployment.
+    Minio is an S3-compatible cloud-native data store. A Pachyderm cluster provides data lineage and pipelines. This stack makes it easy to spin up a cloud-native versioned controlled data store and pipelining tool.
 
-    [**View**](stacks/clearml-kfserving.md){ .md-button }
-
-<div style="clear:both;"></div>
-
-!!! abstract inline "Juju: Kubeflow + MLflow"
-    *By Canonical*
-
-    Juju from Canonical allows easy combination of technologies: this example uses Juju relations to integrate Kubeflow with MLflow and Seldon Core, as well as Prometheus.
-
-    [**View**](stacks/juju-kubeflow-mlflow-seldon.md){ .md-button }
-
-!!! abstract inline "Boxkite + Kubeflow"
-    *By Basis-AI*
-
-    Boxkite from Basis-AI is an open source project to compare training-time and deployment-time data distributions. KL divergence implemented in PromQL! This stack shows it running in conjunction with Kubeflow, MLflow, Seldon, Prometheus & Grafana.
-
-    [**View**](stacks/boxkite-kubeflow.md){ .md-button }
+    [**View**](stacks/minio-pachyderm.md){ .md-button }
 
 <div style="clear:both;"></div>
 
-!!! abstract inline "Pachyderm + Seldon"
-    *By Pachyderm*
+## Getting Started
 
-    Use Pachyderm to train a model, and Seldon to deploy it, with full data version control & provenance.
+It's really easy to get started.
 
-    [**View**](stacks/pachyderm-seldon.md){ .md-button }
+1. [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+2. Browse to a [stack](stacks/introduction.md) or [component](components/introduction.md) and follow the instructions to deploy.
 
-!!! abstract inline "SAME + Kubeflow + MLflow"
-    *By Microsoft*
+## Get involved!
 
-    The SAME project, from David Aronchick, founder of Kubeflow at the Microsoft Office of the CTO, provides an easy CLI user experience for data scientists to create reproducible workflows.
+Find us in `#mlops-stacks` on the MLOps.community Slack:
 
-    [**View**](stacks/same-kubeflow-mlflow.md){ .md-button }
+[Join Slack :rocket:](https://go.mlops.community/slack){ .md-button .md-button--primary }
 
-<div style="clear:both;"></div>
+Or [read more about contributing](CONTRIBUTING.md).
 
 ## Community Founders
 
 * [Luke Marsden](https://www.linkedin.com/in/luke-marsden-71b3789/) - MLOps Consulting
-* [Phil Winder](https://www.linkedin.com/in/drphilwinder/) - Winder Research
-* [Demetrios Brinkmann](https://www.linkedin.com/in/dpbrinkm/) - MLOps Community
 * [Kai Davenport](https://www.linkedin.com/in/kai-davenport-228b6017/) - MLOps Consulting
-
-## Get involved!
-
-Find us in `#mlops-stacks` on the MLOps.community Slack
-
-[Join Slack :rocket:](https://go.mlops.community/slack){ .md-button .md-button--primary }
+* [Phil Winder](https://www.linkedin.com/in/drphilwinder/) - [Winder Research](https://WinderResearch.com)
+* [Demetrios Brinkmann](https://www.linkedin.com/in/dpbrinkm/) - [MLOps Community](https://mlops.community)
