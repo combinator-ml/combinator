@@ -21,6 +21,6 @@ nav:
     - stacks/introduction.md
     - stacks/kubeflow-mlflow.md
     - stacks/minio-pachyderm.md
-  - architecture.md
+  - design.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md

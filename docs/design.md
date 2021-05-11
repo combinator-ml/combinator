@@ -1,4 +1,4 @@
-# Architecture and Standards
+# Design and Standards
 
 Imagine this. You've been given the task of testing a new piece of ML software. Maybe you want to integrate it into your stack or maybe you just want to try it out. In our experience we spent a non-trivial amount of time attempting to get the stack running, especially when there are multiple components involved.
 
