@@ -14,12 +14,14 @@ nav:
   - Components:
     - components/introduction.md
     - Data:
-      - components/data/mino.md
+      - components/data/minio.md
       - components/data/pachyderm.md
+      - components/data/feast.md
   - Stacks:
     - stacks/introduction.md
     - stacks/bodywork-mlflow.md
     - stacks/kubeflow-mlflow.md
     - stacks/minio-pachyderm.md
+  - design.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md

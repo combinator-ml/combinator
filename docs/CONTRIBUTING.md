@@ -2,6 +2,10 @@
 
 First off, thanks for taking the time to contribute. You're amazing! 🎉 😘 ✨
 
+If at any point you need any help, the best way to get in touch with someone is in `#mlops-stacks` channel on the MLOps.community Slack.
+
+[Join Slack :rocket:](https://go.mlops.community/slack){ .md-button .md-button--primary }
+
 The following is a set of guidelines for contributing. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 - [Reporting Bugs](#reporting-bugs)
