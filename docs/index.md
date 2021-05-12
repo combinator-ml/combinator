@@ -1,10 +1,10 @@
 # Easy MLOps Stacks
 
-Sophisticated teams develop their MLOps stack from a combination of best of breed components. 
+Sophisticated teams develop their MLOps stack from a combination of best of breed components.
 
-But building or spinning up stacks is incredibly difficult. 
+But building or spinning up stacks is incredibly difficult.
 
-This open source community exists to make combining them less of a headache. 
+This open source community exists to make combining them less of a headache.
 
 Deploy common MLOps stacks with a single command.
 
