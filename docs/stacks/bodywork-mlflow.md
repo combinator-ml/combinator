@@ -1,6 +1,6 @@
 # Bodywork + MLflow
 
-This tutorial shows you how to use Boxkite in the context of a Bodywork cluster with MLflow.
+This tutorial shows you how to use Bodywork to deploy pipelines using MLflow for tracking training metrics and for managing the persistence of trained models.
 
 ## Launch the Test Drive
 
