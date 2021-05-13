@@ -1,17 +1,17 @@
 # Bodywork + MLflow
 
-This stack allows you to experiment with Bodywork and MLflow together. [Bodywork](https://github.com/bodywork-ml/bodywork-core) is an open-source MLOps tool for deploying machine learning projects, to Kubernetes. [MLflow](https://www.mlflow.org) is also MLOps tool, focused on managing the machine learning lifecycle (tracking metrics and managing ML arteacts, such as trained models).
+This stack allows you to experiment with Bodywork and MLflow together. [Bodywork](https://github.com/bodywork-ml/bodywork-core) is an open-source MLOps tool for deploying machine learning projects to Kubernetes. [MLflow](https://www.mlflow.org) is also a MLOps tool, focused on managing the machine learning lifecycle (tracking metrics and managing ML arteacts, such as trained models).
 
-We have developed an example train-and-serve pipeline to demonstrate Bodywork and MLflow working side-by-side, which you can explore in [this GitHub repository](https://github.com/bodywork-ml/bodywork-pipeline-with-mlflow). The pipeline uses MLflow to track the training metrics and manage the persistence of trained models. The pipeline consists of two stages, defined in two executable Python modules:
+We have developed an example train-and-serve pipeline to demonstrate Bodywork and MLflow working side-by-side, which you can explore in [this GitHub repository](https://github.com/bodywork-ml/bodywork-pipeline-with-mlflow). The pipeline uses MLflow to track the training metrics and manage trained models. The pipeline consists of two stages, defined in two executable Python modules:
 
 1. `train_model.py` - run a batch job to train a model, logging metrics and registering models to MLflow.
 2. `serve_model.py` - loads the latest 'production' model from MLflow and then starts a simple Flask app to handle requests for scoring data.
 
-![bodywork](https://bodywork-media.s3.eu-west-2.amazonaws.com/ml_pipeline_with_mlflow.png)
-
 The details of the deployment are described in the `bodywork.yaml` configuration file. When a deployment is triggered, Bodywork instructs Kubernetes to start pre-built [Bodywork containers](https://hub.docker.com/repository/docker/bodyworkml/bodywork-core), that pull the code from the demo project's Git repo and run the executable Python modules. Each stage is associated with one Python module and is run, in isolation, in it's own container.
 
 Launch the test drive and follow the steps below to see this pipeline in action!
+
+![bodywork](https://bodywork-media.s3.eu-west-2.amazonaws.com/ml_pipeline_with_mlflow.png)
 
 ## Step 0 - Launch the Test Drive
 
@@ -40,7 +40,7 @@ At busy times, you may need to wait a few minutes for a test drive environment t
 
 ### Step 1 - Deploy the Pipeline
 
-To test the deployment using a local workflow-controller streaming the logs to stdout, run,
+To test the deployment using a local workflow-controller that streams logs to stdout, run,
 
 ```text
 $ bodywork workflow \
@@ -49,9 +49,9 @@ $ bodywork workflow \
     master
 ```
 
-Once the deployment has completed, browse to the MLflow UI to check on the model metrics that were logged during training.
+Once the deployment has completed, browse to the MLflow UI to check on the model metrics that were logged to the `iris-classification` experiment during training.
 
-## Step 2 - Testing the Model-Scoring Service
+## Step 2 - Test the Scoring Service
 
 Requests to score data can now be sent to the scoring service - for example,
 
