@@ -22,6 +22,9 @@ nav:
     - stacks/bodywork-mlflow.md
     - stacks/kubeflow-mlflow.md
     - stacks/minio-pachyderm.md
+  - Infrastructure:
+    - infrastructure/introduction.md
+    - infrastructure/google.md
   - design.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md
