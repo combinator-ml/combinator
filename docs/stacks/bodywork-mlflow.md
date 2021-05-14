@@ -106,7 +106,7 @@ train-and-deploy-1605214260             2020-11-12 20:51:04+00:00     2020-11-12
 
 ## Cleaning Up
 
-To clean-up the deployment in its entirety, delete the namespace using kubectl - e.g. by running,
+To clean-up the deployment in its entirety, delete the namespace using Kubectl - e.g. by running,
 
 ```text
 $ kubectl delete ns bodywork
