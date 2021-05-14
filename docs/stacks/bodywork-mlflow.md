@@ -38,7 +38,7 @@ At busy times, you may need to wait a few minutes for a test drive environment t
 
 **Note that the environment will shut down automatically 1 hour after you start using it.**
 
-### Step 1 - Deploy the Pipeline
+## Step 1 - Deploy the Pipeline
 
 To test the deployment using a local workflow-controller that streams logs to stdout, run,
 
