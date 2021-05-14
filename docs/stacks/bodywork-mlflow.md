@@ -1,6 +1,6 @@
 # Bodywork + MLflow
 
-This stack allows you to experiment with Bodywork and MLflow together. [Bodywork](https://github.com/bodywork-ml/bodywork-core) is an open-source MLOps tool for deploying machine learning projects to Kubernetes. [MLflow](https://www.mlflow.org) is also a MLOps tool, focused on managing the machine learning lifecycle (tracking metrics and managing ML arteacts, such as trained models).
+This tutorial enables you to experiment with Bodywork and MLflow combined into a single open-source MLOps stack. [Bodywork](https://github.com/bodywork-ml/bodywork-core) is a tool that focuses on the deployment of machine learning projects to Kubernetes. [MLflow](https://www.mlflow.org) is a tool for managing the machine learning lifecycle (tracking metrics and managing ML arteacts, such as trained models).
 
 We have developed an example train-and-serve pipeline to demonstrate Bodywork and MLflow working side-by-side, which you can explore in [this GitHub repository](https://github.com/bodywork-ml/bodywork-pipeline-with-mlflow). The pipeline uses MLflow to track the training metrics and manage trained models. The pipeline consists of two stages, defined in two executable Python modules:
 
@@ -9,7 +9,7 @@ We have developed an example train-and-serve pipeline to demonstrate Bodywork an
 
 The details of the deployment are described in the `bodywork.yaml` configuration file. When a deployment is triggered, Bodywork instructs Kubernetes to start pre-built [Bodywork containers](https://hub.docker.com/repository/docker/bodyworkml/bodywork-core), that pull the code from the demo project's Git repo and run the executable Python modules. Each stage is associated with one Python module and is run, in isolation, in it's own container.
 
-Launch the test drive and follow the steps below to see this pipeline in action!
+Launch the test drive below and follow the steps to see this pipeline in action!
 
 ![bodywork](https://bodywork-media.s3.eu-west-2.amazonaws.com/ml_pipeline_with_mlflow.png)
 
@@ -49,20 +49,20 @@ $ bodywork workflow \
     master
 ```
 
-Once the deployment has completed, browse to the MLflow UI to check on the model metrics that were logged to the `iris-classification` experiment during training.
+Once the deployment has completed, browse to the MLflow UI to check that the model metrics that were logged to the `iris-classification` experiment during training, and to confirm that the trained model, `iris-classifier--sklearn-decision-tree`, was registered and promoted to 'production'.
 
 ## Step 2 - Test the Scoring Service
 
-Requests to score data can now be sent to the scoring service - for example,
+Requests to score data can now be sent to the scoring service. Try the following in the shell,
 
 ```text
-$ curl http://YOUR_CLUSTERS_EXTERNAL_IP/bodywork-mlflow-demo/bodywork-mlflow-demo--scoring-service/iris/v1/score \
+$ curl http://localhost:31380/bodywork/bodywork-mlflow-demo--scoring-service/iris/v1/score \
     --request POST \
     --header "Content-Type: application/json" \
     --data '{"sepal_length": 5.1, "sepal_width": 3.5, "petal_length": 1.4, "petal_width": 0.2}'
 ```
 
-Should return,
+Which should return,
 
 ```json
 {
