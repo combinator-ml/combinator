@@ -17,6 +17,7 @@ nav:
       - components/data/minio.md
       - components/data/pachyderm.md
       - components/data/feast.md
+      - components/data/istio.md
   - Stacks:
     - stacks/introduction.md
     - stacks/bodywork-mlflow.md
