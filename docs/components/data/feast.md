@@ -1,24 +1,67 @@
-# Feast
+# terraform-k8s-feast
 
-The [Feast](https://feast.dev) component creates a cloud-native feature store.
+Feast terraform module for combinator.ml
 
-- [Website](https://github.com/combinator-ml/terraform-k8s-feast)
+## Usage
 
-## Getting Started
+```terraform
+module "feast" {
+  source  = "combinator-ml/feast/k8s"
+}
+```
 
-### Installation
+See the full configuration options below.
 
-1. Prepare your k8s cluster
-2. Install the component by following the instructions in the component's README.md
+### Stack Creation
 
-### Usage
+```bash
+KUBE_CONFIG_PATH=~/.kube/config terraform apply
+```
 
-1. Port forward the bundled Jupyter instance, which by default is running in the `feast` namespace:
+### Stack Deletion
 
-    ```
-    kubectl port-forward $(kubectl -n feast get pod -l app=feast-jupyter -o custom-columns=:metadata.name) 8888:8888 -n feast
-    ```
+```bash
+KUBE_CONFIG_PATH=~/.kube/config terraform destroy
+```
 
-2. Browse to built in `minimal/minimal_ride_hailing.ipynb` notebook and run the steps.
+## Known Issues
 
-> **NOTE: The notebook includes several local Spark commands, which take a long time to complete on smaller clusters.**
+- Why do you have to explicitly export the Kubernetes config?
+
+I found that hardcoding the kubeconfig led to [this terraform bug](https://github.com/terraform-aws-modules/terraform-aws-eks/issues/1234).
+
+## Requirements
+
+No requirements.
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| helm | n/a |
+| kubernetes | n/a |
+| random | n/a |
+
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [helm_release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) |
+| [kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) |
+| [kubernetes_secret](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) |
+| [random_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| name\_prefix | Prefix to be used when naming the different components of Feast | `string` | `"combinator"` | no |
+| namespace | (Optional) The namespace to install into. Defaults to feast. | `string` | `"feast"` | no |
+
+## Outputs
+
+No output.
