@@ -1,6 +1,7 @@
 site_name: "Combinator.ml"
 theme:
   name: material
+  custom_dir: docs/overrides
 markdown_extensions:
   - attr_list
   - admonition

@@ -90,3 +90,4 @@ Or [read more about contributing](CONTRIBUTING.md).
 * [Kai Davenport](https://www.linkedin.com/in/kai-davenport-228b6017/) - MLOps Consulting
 * [Phil Winder](https://www.linkedin.com/in/drphilwinder/) - [Winder Research](https://WinderResearch.com)
 * [Demetrios Brinkmann](https://www.linkedin.com/in/dpbrinkm/) - [MLOps Community](https://mlops.community)
+* [Dan Baker](https://www.linkedin.com/in/danthebaker/) - AutoDB
