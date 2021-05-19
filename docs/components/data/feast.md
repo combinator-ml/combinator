@@ -16,7 +16,7 @@ Feast does not perform any computation. You can think of it as a meta-database; 
 
 The fastest way to get started is to use the test drive functionality provided by [TestFaster](https://testfaster.ci). Click on the "Launch Test Drive" button below (opens a new window).
 
-[:computer: Launch Test Drive :computer:](https://testfaster.ci/launch?embedded=true&amp;repo=https://github.com/combinator-ml/terraform-k8s-feast&amp;file=examples/testfaster/.testfaster.yml)
+<a href="https://testfaster.ci/launch?embedded=true&amp;repo=https://github.com/combinator-ml/terraform-k8s-feast&amp;file=examples/testfaster/.testfaster.yml" target="\_blank">:computer: Launch Test Drive :computer:</a>
 
 ### Launch Jupyter
 
