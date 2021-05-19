@@ -3,12 +3,8 @@
 **tl; dr;** A [combinator](https://combinator.ml) data component that installs [Feast](https://feast.dev), a feature store.
 
 - [Introduction](#introduction)
-- [Quick Drive](#quick-drive)
-  * [Launch Jupyter](#launch-jupyter)
-  * [Example Notebook](#example-notebook)
+- [Test Drive](#test-drive)
 - [Usage](#usage)
-  * [Prerequisites](#prerequisites)
-  * [Component Usage](#component-usage)
 
 ## Introduction
 
