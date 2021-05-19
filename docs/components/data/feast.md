@@ -18,9 +18,7 @@ Feast does not perform any computation. You can think of it as a meta-database; 
 
 ## Test Drive
 
-The fastest way to get started is to use the test drive functionality provided by [TestFaster](https://testfaster.ci). [Combinator](https://combinator.ml) website users can use the iframe directly. Github users can click on the "Launch Test Drive" button below.
-
-<iframe width="600" height="400" id="testdrive" style="display: block;" src="https://testfaster.ci/launch?embedded=true&amp;repo=https://github.com/combinator-ml/terraform-k8s-feast&amp;file=examples/testfaster/.testfaster.yml"></iframe><br/><br/>
+The fastest way to get started is to use the test drive functionality provided by [TestFaster](https://testfaster.ci). Click on the "Launch Test Drive" button below (opens a new window).
 
 [:computer: Launch Test Drive :computer:](https://testfaster.ci/launch?embedded=true&amp;repo=https://github.com/combinator-ml/terraform-k8s-feast&amp;file=examples/testfaster/.testfaster.yml)
 
