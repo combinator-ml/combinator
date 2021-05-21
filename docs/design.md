@@ -62,12 +62,41 @@ There is little practical difference between components and stacks, other than t
 └── variables.tf
 ```
 
-### Checklist
+### Tutorial
 
-Before you announce your component/stack/infrastructure module, make sure you have:
+We've created some helpful templates to make it easier to get started developing a component or stack. Follow the steps to get started.
 
-- [ ] Created a basic, k8s-native example
-- [ ] Created a useful README explaining what it does and how to use it
-- [ ] Submitted a PR to the [Combinator.ml website](https://github.com/combinator-ml/combinator), to update the core documentation
-- [ ] Published your module on the [Terraform Registry](https://registry.terraform.io)
-- [ ] Checked and adhered to the [contributing guide](CONTRIBUTING.md)
+#### 1. Create a Repo from a Template
+
+First create your new repository and base it upon the [combinator template](https://github.com/combinator-ml/terraform-template). If you are working within the combinator organization, then you can use Github's template functionality. Otherwise, just merge the repo into yours.
+
+The template provides the following functionality:
+
+- Good initial structure
+- Github actions to: publish docs to the main combinator site, generate terraform documentation, create release notes, lint, test the terraform code
+
+#### 2. Release to the Terraform Registry
+
+Create your first release, `0.0.0` by convension, browse to the [Terraform registry](https://registry.terraform.io/github/create) and publish a new **module**. Once generated it should show your template repo.
+
+#### 3. Update the Code and Examples
+
+Now you need to go through all the Terraform code and implement your component. Take a look at the other components for examples using Helm to install your application, or leverage other modules to create a stack, for example.
+
+#### 4. Update the Documentation
+
+Now go through the `.header.md` file and update your README. This file will be pushed to the combinator.ml website, so make sure it makes sense outside of the context of the repository.
+
+#### 5. Create a PR
+
+Push your code to a branch and create a PR. This will kick off the various Github actions. This step is important because if you just push to master, it won't regenerate the documentation.
+
+Make sure all the actions pass, then merge the PR.
+
+#### 6. Merge the Combinator Docs
+
+Now browse to the [combinator repository](https://github.com/combinator-ml/combinator/pulls) and look at the PR that your documentation action created. Make sure everything is in order and request a merge from one of the project's admins.
+
+#### 7. Celebrate and Share
+
+Now share your success! Tell us about the experience on Slack! Share with your colleagues! Share on social media! Spread the love!
