@@ -30,3 +30,6 @@ nav:
   - design.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md
+
+# Otherwise mkdocs assumes the main branch is called 'master'
+edit_uri: edit/main/docs/
