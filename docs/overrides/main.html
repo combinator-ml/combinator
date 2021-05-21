@@ -3,7 +3,7 @@
 <script>
   rudderanalytics = window.rudderanalytics = [];
 
-  var  methods = [
+  var methods = [
     "load",
     "page",
     "track",
@@ -17,14 +17,14 @@
   ];
 
   for (var i = 0; i < methods.length; i++) {
-        var method = methods[i];
-        rudderanalytics[method] = function (methodName) {
-              return function () {
-                    rudderanalytics.push([methodName].concat(Array.prototype.slice.call(arguments)));
-              };
-            }(method);
+    var method = methods[i];
+    rudderanalytics[method] = function (methodName) {
+      return function () {
+        rudderanalytics.push([methodName].concat(Array.prototype.slice.call(arguments)));
+      };
+    }(method);
   }
-  rudderanalytics.load("1siCPkzWFGGmYiZQ4r8ZdqaJLBp","https://danbmedefzavzlslreyxjgcjwlf.dataplane.rudderstack.com");
+  rudderanalytics.load("1siCPkzWFGGmYiZQ4r8ZdqaJLBp", "https://danbmedefzavzlslreyxjgcjwlf.dataplane.rudderstack.com"); // pragma: allowlist secret
   rudderanalytics.page();
 
   function getUrlParameter(name) {
@@ -35,11 +35,11 @@
   };
 
   var anonymous_id = rudderanalytics.getAnonymousId();
-  var utm_source =  getUrlParameter('utm_source');
-  var utm_campaign =  getUrlParameter('utm_campaign');
-  var utm_medium =  getUrlParameter('utm_medium');
-  var utm_content =  getUrlParameter('utm_content');
-  var utm_term =  getUrlParameter('utm_term');
+  var utm_source = getUrlParameter('utm_source');
+  var utm_campaign = getUrlParameter('utm_campaign');
+  var utm_medium = getUrlParameter('utm_medium');
+  var utm_content = getUrlParameter('utm_content');
+  var utm_term = getUrlParameter('utm_term');
 
   if (utm_content) {
     rudderanalytics.track(

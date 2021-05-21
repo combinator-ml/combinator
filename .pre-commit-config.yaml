@@ -1,24 +1,24 @@
 repos:
-  - repo: https://github.com/psf/black
-    rev: 20.8b1
-    hooks:
-      - id: black
-
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.0
-    hooks:
-      - id: flake8
-
-  - repo: https://github.com/timothycrosley/isort
-    rev: 5.7.0
-    hooks:
-      - id: isort
-        additional_dependencies: [toml]
-        exclude: ^.*/?setup\.py$
-
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: debug-statements
+      -   id: check-added-large-files
+      -   id: check-executables-have-shebangs
+      -   id: check-json
+      -   id: pretty-format-json
+      -   id: check-merge-conflict
+      -   id: check-symlinks
+      -   id: check-toml
+      -   id: check-vcs-permalinks
+      -   id: check-xml
+      -   id: check-yaml
+      -   id: destroyed-symlinks
+      -   id: detect-private-key
+      -   id: end-of-file-fixer
+      -   id: mixed-line-ending
+      -   id: sort-simple-yaml
+      -   id: trailing-whitespace
+  -   repo: https://github.com/Yelp/detect-secrets
+      rev: v1.1.0
+      hooks:
+      -   id: detect-secrets
