@@ -77,7 +77,7 @@ The template provides the following functionality:
 
 #### 2. Release to the Terraform Registry
 
-Create your first release, `0.0.0` by convension, browse to the [Terraform registry](https://registry.terraform.io/github/create) and publish a new **module**. Once generated it should show your template repo.
+Create your first release, `0.0.0` by convention, browse to the [Terraform registry](https://registry.terraform.io/github/create) and publish a new **module**. Once generated it should show your template repo.
 
 #### 3. Update the Code and Examples
 
