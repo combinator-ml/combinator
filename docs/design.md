@@ -87,7 +87,7 @@ Now you need to go through all the Terraform code and implement your component. 
 
 Now go through the `.header.md` file and update your README. This file will be pushed to the combinator.ml website, so make sure it makes sense outside of the context of the repository.
 
-Browse to the [`combinator-docs.yml` github action](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml) and update the [`COMBINATOR_DOCS_FILE` environmental variable](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml#L13) to point to the location where you want your documentation to appear in the website heirarchy. For example, the [Feast](components/data/feast.md) component is set to: `docs/components/data/feast.md`.
+Browse to the [`combinator-docs.yml` github action](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml) and update the [`COMBINATOR_DOCS_FILE` environmental variable](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml#L13) to point to the location where you want your documentation to appear in the website heirarchy. For example, the [Feast](components/data/feast.md) component is set to: `docs/components/data/feast.md`. The directory must already exist.
 
 If you are working within the [combinator-ml organization](https://github.com/combinator-ml) then the combinator docs github action will start to work once merged.
 
