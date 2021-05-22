@@ -87,6 +87,14 @@ Now you need to go through all the Terraform code and implement your component. 
 
 Now go through the `.header.md` file and update your README. This file will be pushed to the combinator.ml website, so make sure it makes sense outside of the context of the repository.
 
+Browse to the [`combinator-docs.yml` github action](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml) and update the [`COMBINATOR_DOCS_FILE` environmental variable](https://github.com/combinator-ml/terraform-template/blob/main/.github/workflows/combinator-docs.yml#L13) to point to the location where you want your documentation to appear in the website heirarchy. For example, the [Feast](components/data/feast.md) component is set to: `docs/components/data/feast.md`.
+
+If you are working within the [combinator-ml organization](https://github.com/combinator-ml) then the combinator docs github action will start to work once merged.
+
+##### Users Outside of the Combinator-ml Organization
+
+But if you are outside of the [combinator-ml organization](https://github.com/combinator-ml) then you will need to create a Github Secret called `CI_TOKEN` with a personal [Github access token](https://github.com/settings/tokens) that has the single permission: `public_repo`. This delegates permission to create a PR using your access credentials.
+
 #### 5. Create a PR
 
 Push your code to a branch and create a PR. This will kick off the various Github actions. This step is important because if you just push to master, it won't regenerate the documentation.
