@@ -17,10 +17,12 @@ Undoubtedly there are components that cross boundaries. When this happens, they 
 - [Minio](data/minio.md) - S3 API compatible cloud-native storage
 - [Pachyderm](data/pachyderm.md) - Data lineage (version control)
 - [Feast](data/feast.md) - Feature store
+- [Istio](data/istio.md) - Service mesh
 
 ## Develop
 
 - [Pachyderm](data/pachyderm.md) - Pipelines
+- [Jupyter](develop/jupyter.md) - Notebooks
 - Kubeflow - Pipelines, Notebooks, Training
 
 ## Deploy
