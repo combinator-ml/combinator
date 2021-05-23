@@ -99,11 +99,17 @@ But if you are outside of the [combinator-ml organization](https://github.com/co
 
 Push your code to a branch and create a PR. This will kick off the various Github actions. This step is important because if you just push to master, it won't regenerate the documentation.
 
-Make sure all the actions pass, then merge the PR.
+Make sure all the actions pass, then merge the PR in your repository. You should now have a valid README.md.
 
 #### 6. Merge the Combinator Docs
 
 Now browse to the [combinator repository](https://github.com/combinator-ml/combinator/pulls) and look at the PR that your documentation action created. Make sure everything is in order and request a merge from one of the project's admins.
+
+Don't forget to add your page to the [mkdocs settings file](https://github.com/combinator-ml/combinator/blob/main/mkdocs.yml) if the component is new, because only the pages listed in this file are added to the website.
+
+You might also want to update any introductory pages or cross-references.
+
+From then on, whenever you update your README.md, it will [automatically raise a PR in the combinator repository](https://github.com/combinator-ml/combinator/pulls).
 
 #### 7. Celebrate and Share
 
