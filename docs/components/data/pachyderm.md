@@ -22,7 +22,7 @@ The fastest way to get started is to use the test drive functionality provided b
 
 Once the test drive has launched, click the two links to the left to get started with Pachyderm:
 
-1. Click the Jupyter link and launch the `demo.ipynb` notebook.  
+1. Click the Jupyter link and launch the `demo.ipynb` notebook.
 2. Click on the Dashboard link to launch the Pachyderm Enterprise Dashboard.
 
 ## Usage
