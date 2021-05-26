@@ -22,7 +22,7 @@ The fastest way to get started is to use the test drive functionality provided b
 
 Once the test drive has launched, click the two links to the left to get started with Pachyderm:
 
-1. Click the Jupyter link and launch the `demo.ipynb` notebook.
+1. Click the Jupyter link and launch the `demo.ipynb` notebook.  
 2. Click on the Dashboard link to launch the Pachyderm Enterprise Dashboard.
 
 ## Usage
@@ -49,7 +49,6 @@ See the full configuration options below.
 | helm | ~> 2.1.2 |
 | kubernetes | ~> 2.2.0 |
 | null | ~> 3.1.0 |
-| provider | >= 2.0.0 |
 
 ## Providers
 
