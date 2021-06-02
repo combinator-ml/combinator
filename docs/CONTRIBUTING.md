@@ -8,6 +8,7 @@ If at any point you need any help, the best way to get in touch with someone is 
 
 The following is a set of guidelines for contributing. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
+- [Contributing Components and Stacks](#contributing-components-and-stacks)
 - [Reporting Bugs](#reporting-bugs)
 - [Suggesting Feature Requests or Enhancements](#suggesting-feature-requests-or-enhancements)
 - [Pull Requests](#pull-requests)
@@ -16,6 +17,10 @@ The following is a set of guidelines for contributing. These are mostly guidelin
   * [Commit](#commit)
   * [Yes! Pull request](#yes-pull-request)
 - [Code of Conduct](#code-of-conduct)
+
+## Contributing Components and Stacks
+
+See the [tutorial](https://combinator.ml/design/#tutorial).
 
 ## Reporting Bugs
 
