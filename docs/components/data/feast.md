@@ -1,79 +1,74 @@
-# Feast
+# terraform-k8s-seldon
 
-**tl; dr;** A [combinator](https://combinator.ml) data component that installs [Feast](https://feast.dev), a feature store.
-
-- [Introduction](#introduction)
-- [Test Drive](#test-drive)
-- [Usage](#usage)
-
-## Introduction
-
-[Feast](https://feast.dev) is an open-source feature store. A feature store allows you to manage, govern, and trace features derived from raw data. This is useful because it helps to unify and standardise, which reduces waste, improves quality, and makes models more reproducible.
-
-Feast does not perform any computation. You can think of it as a meta-database; a database that manages other databases. It effectively creates a cache of feature data, keyed by time. The Feast libraries and CLIs provide a consistent way of pushing or streaming new data into the cache. Downstream systems use a similar interface to access point-in-time data. [Learn more about feast in the documentation.](https://docs.feast.dev)
-
-## Test Drive
-
-The fastest way to get started is to use the test drive functionality provided by [TestFaster](https://testfaster.ci). Click on the "Launch Test Drive" button below (opens a new window).
-
-<a href="https://testfaster.ci/launch?embedded=true&amp;repo=https://github.com/combinator-ml/terraform-k8s-feast&amp;file=examples/testfaster/.testfaster.yml" target="\_blank">:computer: Launch Test Drive :computer:</a>
-
-### Launch Jupyter
-
-Once the component has launched, click on the Jupyter link. Feast does not have a UI by default. You will use Jupyter to interact with Feast via its API.
-
-### Example Notebook
-
-Once inside Jupyter, browse to the minimal notebook, which is the [official example](https://github.com/feast-dev/feast/tree/v0.9-branch/examples/minimal). Follow the instructions in the notebook.
+Seldon terraform module for combinator.ml
 
 ## Usage
 
-### Prerequisites
-
-Start by preparing your Kubernetes cluster using one of the [infrastructure components](https://combinator.ml/infrastructure/introduction/) or use your own cluster.
-
-### Component Usage
-
 ```terraform
-module "feast" {
-  source  = "combinator-ml/feast/k8s"
-  # Optional settings go here
+module "seldon" {
+  source  = "combinator-ml/seldon/k8s"
 }
 ```
 
 See the full configuration options below.
 
+### Stack Creation
+
+```bash
+KUBE_CONFIG_PATH=~/.kube/config terraform apply
+```
+
+### Stack Deletion
+
+```bash
+KUBE_CONFIG_PATH=~/.kube/config terraform destroy
+```
+
+## Known Issues
+
+- Why do you have to explicitly export the Kubernetes config?
+
+I found that hardcoding the kubeconfig led to [this terraform bug](https://github.com/terraform-aws-modules/terraform-aws-eks/issues/1234).
+
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| helm | >= 2.0.0 |
+| kubectl | >= 1.7.0 |
+| kubernetes | >= 2.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| helm | n/a |
-| kubernetes | n/a |
-| random | n/a |
+| helm | >= 2.0.0 |
+| kubectl | >= 1.7.0 |
+| kubernetes | >= 2.0.0 |
 
 ## Modules
 
-No Modules.
+| Name | Source | Version |
+|------|--------|---------|
+| istio | combinator-ml/istio/k8s |  |
 
 ## Resources
 
 | Name |
 |------|
 | [helm_release](https://registry.terraform.io/providers/hashicorp/helm/latest/docs/resources/release) |
+| [kubectl_file_documents](https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs/data-sources/file_documents) |
+| [kubectl_manifest](https://registry.terraform.io/providers/gavinbunney/kubectl/latest/docs/resources/manifest) |
 | [kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) |
-| [kubernetes_secret](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/secret) |
-| [random_password](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password) |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| name\_prefix | Prefix to be used when naming the different components of Feast | `string` | `"combinator"` | no |
-| namespace | (Optional) The namespace to install into. Defaults to feast. | `string` | `"feast"` | no |
+| enable\_example\_seldon\_deployment | Enable an example seldon deployment | `bool` | `true` | no |
+| enable\_seldon\_gateway | Create an istio gateway for seldon | `bool` | `true` | no |
+| seldon\_core\_operator\_namespace | (Optional) The namespace to install the minio operator into. Defaults to minio-operator | `string` | `"seldon-system"` | no |
+| seldon\_core\_values | (Optional) List of values in raw yaml to pass to helm. | `list(string)` | `[]` | no |
 
 ## Outputs
 
