@@ -21,6 +21,8 @@ nav:
       - components/data/istio.md
     - Develop:
       - components/develop/jupyter.md
+    - Deploy:
+      - components/deploy/seldon.md
   - Stacks:
     - stacks/introduction.md
     - stacks/bodywork-mlflow.md
