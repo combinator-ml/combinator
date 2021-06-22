@@ -50,7 +50,7 @@ I found that hardcoding the kubeconfig led to [this terraform bug](https://githu
 
 | Name | Source | Version |
 |------|--------|---------|
-| istio | combinator-ml/istio/k8s |  |
+| istio | combinator-ml/istio/k8s | 0.0.1 |
 
 ## Resources
 
