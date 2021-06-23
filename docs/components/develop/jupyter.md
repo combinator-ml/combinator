@@ -1,4 +1,4 @@
-# terraform-k8s-jupyter
+# Jupyter
 
 **tl; dr;** A [combinator](https://combinator.ml) data component that provides a single [Jupyter](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) instance, a notebook provider.
 
