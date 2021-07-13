@@ -1,4 +1,4 @@
-# terraform-k8s-mlflow
+# MLFlow
 
 **tl; dr;** A [combinator](https://combinator.ml) governance component that provides a hosted [MLFlow](https://mlflow.org) server, a model repository and experiment tracker.
 

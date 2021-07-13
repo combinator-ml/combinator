@@ -35,4 +35,4 @@ Undoubtedly there are components that cross boundaries. When this happens, they 
 
 ## Govern
 
-- MLFlow - Model management
+- [MLFlow](govern/mlflow.md) - Model management
