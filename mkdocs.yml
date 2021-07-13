@@ -23,6 +23,8 @@ nav:
       - components/develop/jupyter.md
     - Deploy:
       - components/deploy/seldon.md
+    - Govern:
+      - components/govern/mlflow.md
   - Stacks:
     - stacks/introduction.md
     - stacks/bodywork-mlflow.md
