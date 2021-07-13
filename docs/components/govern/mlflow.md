@@ -29,7 +29,7 @@ Start by preparing your Kubernetes cluster using one of the [infrastructure comp
 ### Component Usage
 
 ```terraform
-module "feast" {
+module "mlflow" {
   source  = "combinator-ml/mlflow/k8s"
   # Optional settings go here
 }
