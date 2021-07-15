@@ -12,7 +12,17 @@
 
 Kubeflow Pipelines (KFP) in particular, has emerged as one eminent ML pipelinging technology, mainly thanks to the managed hosting in various clouds.
 
-It's opinionated ML-specific API helps data scientists and ML engineers develop robust, repeatable pipelines.
+Its opinionated ML-specific API helps data scientists and ML engineers develop robust, repeatable pipelines.
+
+### Kubeflow Version
+
+This installation uses Kubeflow version 1.2, which is now out of date.
+
+### Status and Recommendations
+
+:warning: **For Testing Only** :warning:
+
+This installation method is not recommended for use. It required a lot of work-arounds that are not suitable for production use. Please refer to the [official documentation](https://www.kubeflow.org/docs/started/installing-kubeflow/) for production installation instructions.
 
 ## Test Drive
 
@@ -72,4 +82,3 @@ No input.
 ## Outputs
 
 No output.
-<!-- bump -->
