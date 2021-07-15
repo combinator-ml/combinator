@@ -23,15 +23,17 @@ Undoubtedly there are components that cross boundaries. When this happens, they 
 
 - [Pachyderm](data/pachyderm.md) - Pipelines
 - [Jupyter](develop/jupyter.md) - Notebooks
-- Kubeflow - Pipelines, Notebooks, Training
+- [Kubeflow](develop/kubeflow.md) - Pipelines, Notebooks, Training
 
 ## Deploy
 
-- Kubeflow - Serving
+- KFServing - Serving
+- [Seldon](deploy/seldon.md) - Serving and monitoring
 
 ## Monitor
 
 - Boxkite - Cloud-native model monitoring
+- [Seldon](deploy/seldon.md) - Serving and monitoring
 
 ## Govern
 
