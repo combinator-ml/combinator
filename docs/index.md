@@ -49,7 +49,7 @@ Components typically fall into one ore more of the following MLOps catagories. [
 
 ## Featured Stacks
 
-Stacks are oppinionated combinations of components. [Find out more.](stacks/introduction.md)
+Stacks are opinionated combinations of components. [Find out more.](stacks/introduction.md)
 
 Here are a few examples:
 
