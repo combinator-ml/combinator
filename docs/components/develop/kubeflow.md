@@ -57,9 +57,10 @@ Once you see the login screen, the username is `admin@kubeflow.org` and the pass
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| k8s | >= 0.8.0 |
-| kubernetes | = 1.13.3 |
+| terraform | >= 0.13 |
+| helm | = 2.2.0 |
+| k8s | = 0.9.1 |
+| kubernetes | = 2.3.2 |
 
 ## Providers
 
