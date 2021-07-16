@@ -88,6 +88,6 @@ Or [read more about contributing](CONTRIBUTING.md).
 
 * [Luke Marsden](https://www.linkedin.com/in/luke-marsden-71b3789/) - MLOps Consulting
 * [Kai Davenport](https://www.linkedin.com/in/kai-davenport-228b6017/) - MLOps Consulting
-* [Phil Winder](https://www.linkedin.com/in/drphilwinder/) - [Winder Research](https://WinderResearch.com)
+* [Phil Winder](https://winderresearch.com/about/team/phil-winder/) - [Winder Research](https://WinderResearch.com/consulting/mlops/)
 * [Demetrios Brinkmann](https://www.linkedin.com/in/dpbrinkm/) - [MLOps Community](https://mlops.community)
 * [Dan Baker](https://www.linkedin.com/in/danthebaker/) - AutoDB
