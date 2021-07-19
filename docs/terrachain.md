@@ -14,7 +14,7 @@ modules:
   # being passed into the inputs to the next. It is up to the module authors to
   # ensure the inputs & outputs match up in such a way that they are mutually
   # compatible.
-  - name: aks:
+  - name: aks
     repo: https://github.com/combinator-ml/terraform-azure-kubernetes
     args:
       autoscaling: on
