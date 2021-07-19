@@ -1,14 +1,13 @@
 # Terrachain (alpha)
 
-The purpose of this "terrachain" format is to enable the execution of a sequence of terraform modules, feeding the output of one into the input for another.
+The purpose of the "terrachain" format is to enable the execution of a sequence of terraform modules, feeding the output of one into the input for another.
 In particular this enables workflows where one module creates a Kubernetes cluster, and a later module deploys _into_ that Kubernetes cluster.
 
-See [the Terraform documentation](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs#stacking-with-managed-kubernetes-cluster-resources) for motivation.
+See [the Terraform documentation](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs#stacking-with-managed-kubernetes-cluster-resources) and [this GitHub issue](https://github.com/hashicorp/terraform/issues/2430#issuecomment-800192314) for motivation.
 
-```
 Example of a configuration that terrachain can apply:
 
----
+```
 apiVersion: combinator.ml/v1alpha1
 modules:
   # The modules get terraform-applied in order, with the outputs from each
