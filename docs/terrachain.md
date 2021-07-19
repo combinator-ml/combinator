@@ -22,6 +22,15 @@ modules:
     repo: https://github.com/combinator-ml/terraform-k8s-kfp
 ```
 
+Or a simpler example, just installing mlflow onto an existing Kubernetes cluster (assumes kubeconfig file in default location or `KUBECONFIG` or similar env var is set):
+
+```
+apiVersion: combinator.ml/v1alpha1
+modules:
+  - name: mlflow
+    repo: https://github.com/combinator-ml/terraform-k8s-mlflow
+```
+
 The terrachain format can be consumed by the [Combinator app](https://app.combinator.ml) and the [SAME project](https://sameproject.org/) with:
 ```
 same init -f
