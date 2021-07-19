@@ -24,4 +24,6 @@ modules:
 
 The terrachain format can be consumed by the [Combinator app](https://app.combinator.ml) and the [SAME project](https://sameproject.org/) with `same init -f`.
 
+As a special case, if a provider outputs a variable called `kubeconfig_contents`, that file will be written to a temporary file and then the path to the temporary file passed to later modules in both `KUBECONFIG` and `KUBE_CONFIG_PATH` environment variables for convenience.
+
 There are some sample terrachain configs at [https://github.com/combinator-ml/stacks](https://github.com/combinator-ml/stacks).
