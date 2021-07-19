@@ -35,6 +35,7 @@ nav:
     - infrastructure/introduction.md
     - infrastructure/google.md
   - design.md
+  - terrachain.md
   - CONTRIBUTING.md
   - CODE_OF_CONDUCT.md
 
