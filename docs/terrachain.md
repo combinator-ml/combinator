@@ -38,4 +38,6 @@ same init -f
 
 As a special case, if a provider outputs a variable called `kubeconfig_contents`, that file will be written to a temporary file and then the path to the temporary file passed to later modules in both `KUBECONFIG` and `KUBE_CONFIG_PATH` environment variables for convenience.
 
+If no `KUBE_CONFIG_PATH` variable is set, and no previous module outputs a `kubeconfig_contents`, terrachain will set it to `~/.kube/config` to workaround [this issue](https://github.com/terraform-aws-modules/terraform-aws-eks/issues/1234).
+
 There are some sample terrachain configs at [https://github.com/combinator-ml/stacks](https://github.com/combinator-ml/stacks).
