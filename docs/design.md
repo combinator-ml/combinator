@@ -11,7 +11,7 @@ To achieve this goal we need to define some principals, otherwise there can be n
 There are three types of code in this project: components, stacks, and infra.
 
 - **Components** provide the smallest possible amount of functionality. Ideally they solve one specific MLOps-related problem and are usually a single project - obvious exceptions are things like Kubeflow. Components are flexible enough to be reused in several stacks.
-- **Stacks** are a combination of components that produce a suite of functionality. Stacks are reusable modules too, but they should only comprise of low-level components.
+- **Stacks** are a combination of components that produce a suite of functionality. Stacks are reusable modules too, but they should only comprise of low-level components and any requisite glue.
 - **Infrastructure** represents infrastructure components that are required to run stacks and components. Typically this defaults to Kubernetes, but all cloud resources are allowed.
 
 All three are managed as terraform code, to make it portable enough to work with any cloud, and to be able to install and/or control all elements throughout the stack. This allows combinator to use best-of-breed resources, like provision Kubernetes clusters with GPUs, or applications through the use of Helm charts. And all with a single dependency, Terraform.
