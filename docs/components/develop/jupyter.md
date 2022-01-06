@@ -1,4 +1,4 @@
-# Jupyter
+# terraform-k8s-jupyter
 
 **tl; dr;** A [combinator](https://combinator.ml) data component that provides a single [Jupyter](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) instance, a notebook provider.
 
@@ -10,7 +10,7 @@
 
 [Jupyter](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html) is an open-source notebook host. Data scientists use notebooks to research, develop, and document their solutions. However, it is also very useful to use when demonstrating other products where the user persona is an engineer or scientist.
 
-Hence, this component is generally used within other stacks to enable demos. The functionality of this component is inteded to help provide those demos.
+Hence, this component is generally used within other stacks to enable demos. The functionality of this component is intended to help provide those demos.
 
 If you are more interested in a notebook platform, then check out [Jupyter Hub](https://jupyter.org/hub), or any cloud vendor notebook hosting solution.
 
